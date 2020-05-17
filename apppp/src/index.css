@@ -1,0 +1,264 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.head-line {
+  background-color: mediumspringgreen;
+  padding-top: 25px;
+  max-height: 50px;
+}
+.cartButton {
+  background-color: transparent;
+  border-color: transparent;
+  position: relative;
+  right: 7px;
+  top: 3px;
+}
+
+.cartButtonSum {
+  position: absolute;
+  bottom: 5px;
+  right: -5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.roundedCartButton {
+  /* background-color: rgb(209, 241, 143); */
+  border-color: rgb(209, 241, 143);
+  border-style: solid;
+  border-radius: 45px;
+  width: fit-content;
+  height: 60px;
+  position: relative;
+}
+
+.bottomTitle {
+  background-color: #343a40 !important;
+  padding-top: 25px;
+  height: 150px;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+
+  color: rgba(255, 255, 255, 0.5);
+}
+.containerBody {
+  padding: 10px;
+  padding-bottom: 272px;
+}
+.contain {
+  min-height: 100%;
+  padding-bottom: 150px;
+  bottom: 0;
+  position: relative;
+}
+
+.product-list {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  margin-left: 7%;
+}
+.product-list-item {
+  padding: 10px;
+  text-align: center;
+}
+
+.productInfoCost {
+  width: 50%;
+  margin-left: 50%;
+
+  background: saddlebrown;
+}
+.productInfoHeader2 {
+  padding: 20px;
+  color: darkslategrey;
+}
+.productInfoHeader {
+  padding: 20px;
+  color: crimson;
+  font-size: 35px;
+  font-weight: bold;
+}
+/* img {
+  width: 45%;
+  max-width: 100;
+  height: auto;
+} */
+
+td {
+  color: darkslategrey;
+}
+td,
+th {
+  padding: 20px;
+}
+table {
+  table-layout: auto;
+
+  font-weight: bold;
+
+  text-align: center;
+}
+.accordionStyle {
+  margin-bottom: 50px;
+}
+
+.product_header_wrap {
+  width: 100%;
+  border: 1px solid #acaaaa;
+  display: inline-block;
+}
+.product_header_right {
+  float: right;
+  height: 595px;
+  padding: 15px;
+
+  position: relative;
+  width: 45% !important;
+}
+.product-images {
+  background: rgba(0, 0, 0, 0) none no-repeat scroll right top;
+  border: 0 none;
+  clear: both;
+  /* height: 595px; */
+  margin: 28px 0 0;
+  text-align: left;
+  /* width: 540px !important; */
+}
+
+.product_header_left {
+  float: left;
+  /* height: 620px; */
+  position: relative;
+  width: 55% !important;
+}
+
+.product-images #imgBigDIV {
+  background-color: transparent !important;
+  border: 0px solid #bdbdbd;
+  height: 558px;
+  margin-bottom: 0px;
+  width: 540px;
+  float: left;
+  text-align: center;
+  position: relative;
+  margin: 2px 0 0 3px;
+}
+
+.product-sons-links {
+  background-color: darkgray;
+  padding: 10px 10px 10px 0px;
+  margin: 10px 10px 10px 0px;
+}
+.product-sons-links .wrap {
+  margin: 5px;
+  /* margin-right: 100%; */
+
+  background: url(./images/background4.jpg) no-repeat top right;
+
+  direction: ltr;
+  border-radius: 30px;
+
+  color: #ffffff;
+  width: 55% !important;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.product-list-itemHover::after {
+  content: "";
+  background-color: rgb(
+    255,
+    255,
+    255
+  ); /* For browsers that do not support gradients */
+  /* background-image: linear-gradient(
+    rgb(255, 255, 255),
+    red
+  ); Standard syntax (must be last) */
+
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 3px;
+
+  position: absolute;
+  z-index: -1;
+}
+.product-list-itemHover {
+  padding: 20px;
+  color: darkslategrey;
+  display: none;
+  position: absolute;
+  width: inherit;
+  bottom: 0%;
+  margin-bottom: 100px;
+  z-index: 1;
+}
+span:hover .product-list-itemHover {
+  display: block;
+}
+#card:hover {
+  border: 1px solid crimson;
+}
+/* visibility:hidden */
+
+.updateProductImage {
+  width: 10%;
+}
+.carouselImg {
+  width: 40%;
+
+  margin-right: 2%;
+  float: left;
+}
+.red-text {
+  color: red;
+}
+.carouselText {
+  width: 55%;
+  position: relative;
+  margin-left: 40%;
+  margin-top: -5%;
+
+  float: left;
+}
+
+.carouselBorder {
+  border-style: solid;
+  border-radius: 35px;
+  overflow: hidden;
+
+  border-color: #343a40;
+  border-width: 5px;
+  /* background-color: rgba(29, 19, 20, 0.5); */
+  background: url(./images/lightFlowerBackground.jpg) top right;
+  background-size: contain;
+}
+/* no-repeat */
+.productOrder {
+  display: flex;
+}
+.cardButtons {
+  display: flex;
+  margin-left: 17%;
+}
+.cardButton {
+  padding: 10px;
+}
+.orderTable {
+  width: 55% !important;
+  margin-top: 15px;
+}
